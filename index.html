@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #a83279, #d38312);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .welcome-container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px 60px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s ease;
+    }
+
+    .welcome-container h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+    }
+
+    .welcome-container p {
+      font-size: 1.2rem;
+      color: #f1f1f1;
+      margin-bottom: 20px;
+    }
+
+    .welcome-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #fff;
+      color: #a83279;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: 0.3s ease;
+    }
+
+    .welcome-btn:hover {
+      background: #a83279;
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <h1>Welcome 🎉</h1>
+    <p>We’re glad to have you here. Enjoy exploring our website!</p>
+    <a href="dashboard.html" class="welcome-btn">Get Started</a>
+  </div>
+</body>
+</html>
